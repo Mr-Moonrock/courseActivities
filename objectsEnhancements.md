@@ -76,3 +76,13 @@ Use one or more of the object enhancements we’ve covered.
 *const s = createAnimal("sheep", "bleet", "BAAAAaaaa")*
 *// {species: "sheep", bleet: ƒ}*
 *s.bleet() //"BAAAAaaaa"*
+
+**Answer:**
+function createAnimal(lion, roar, meow) {
+  return {
+    lion,
+    [roar]() {
+      return meow;
+    },
+  };
+}
